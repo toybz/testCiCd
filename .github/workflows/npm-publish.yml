@@ -1,0 +1,29 @@
+name: Deploy from master
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm run build
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://<YOURREGISTRY>.bytesafe.dev/r/default
+      - run: npm run publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
