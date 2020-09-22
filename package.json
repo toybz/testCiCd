@@ -1,6 +1,6 @@
 {
-  "name": "test-ci-cd",
-  "version": "1.1.0",
+  "name": "toybz-test-ci-cd",
+  "version": "0.0.1",
   "description": "test cicd.",
   "author": "ToMan",
   "repository": {
