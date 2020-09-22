@@ -19,7 +19,6 @@
     "ng": "ng",
     "start": "ng serve --open --port=9879",
     "build": "npx ng-packagr -p ng-package.json",
-    "publish": "cd dist && npm publish",
     "pack": "cd dist && npm pack",
     "test": "ng test",
     "lint": "ng lint",
