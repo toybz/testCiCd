@@ -1,6 +1,6 @@
 {
   "name": "ng-flw-test",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "test cicd.",
   "author": "ToMan",
   "repository": {
@@ -18,7 +18,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open --port=9879",
-    "build": "npx ng-packagr -p ng-package.json",
+    "build": "npx ng-packagr -p ng-package.json && cd dist && npm pack",
     "pack": "cd dist && npm pack",
     "test": "ng test",
     "lint": "ng lint",
