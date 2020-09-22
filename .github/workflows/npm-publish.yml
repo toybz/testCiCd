@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm run build
+      - run: npm i && npm run build
 
   publish-npm:
     needs: build
@@ -24,6 +24,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://<YOURREGISTRY>.bytesafe.dev/r/default
-      - run: npm run publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
