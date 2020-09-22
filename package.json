@@ -1,6 +1,6 @@
 {
-  "name": "toybz-test-ci-cd",
-  "version": "0.0.1",
+  "name": "ng-flw-test",
+  "version": "0.0.9",
   "description": "test cicd.",
   "author": "ToMan",
   "repository": {
