@@ -24,6 +24,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://<YOURREGISTRY>.bytesafe.dev/r/default
-      - run: npm run publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
