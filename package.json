@@ -1,6 +1,6 @@
 {
   "name": "ng-flw-test",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "test cicd.",
   "author": "ToMan",
   "repository": {
@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "files": [
-    "dist/*.*"
+    "dist/*.tgz"
   ],
   "scripts": {
     "ng": "ng",
