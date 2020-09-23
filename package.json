@@ -12,9 +12,6 @@
     "Ionic"
   ],
   "license": "MIT",
-  "files": [
-    "dist/*.tgz"
-  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open --port=9879",
