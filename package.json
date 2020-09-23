@@ -1,6 +1,6 @@
 {
   "name": "ng-flw-test",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "test cicd.",
   "author": "ToMan",
   "repository": {
@@ -24,7 +24,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-
   "private": false,
   "dependencies": {
     "@angular/animations": ">=4.0.0",
